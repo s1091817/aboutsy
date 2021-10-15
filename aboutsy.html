@@ -14,6 +14,10 @@
 			color: greenyellow; }
 	</style>
 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
 </head>
 <body>
 	<nav>
@@ -23,7 +27,8 @@
 			<li><a href = "#youtube">推薦影片</a></li>
 		</ul>
 	</nav>
-	<main>
+
+	<main class="container-fluid bg-primary text-white text-center">
 
 		<nav>
 			<h1><a href = "http://www1.pu.edu.tw/~s1091817">葉思妤 (Szu-Yu Yeh)</a></h1>
@@ -34,25 +39,27 @@
 		<img src="me.jpg" alt="照片">
 		<br><br><br>
 
-		<session id = "aboutsy">
-			<header>關於我</header>
-			<h3>學歷：靜宜大學資訊管理學系</h3>
-			<h3>E-Mail:<a href="mailto:s1091817@pu.edu.tw">s1091817@pu.edu.tw</a></h3>
-		</session>
+		<div class="row">
+			<session id = "aboutsy" class="col-lg-4">
+				<header>關於我</header>
+				<h3>學歷：靜宜大學資訊管理學系</h3>
+				<h3>E-Mail:<a href="mailto:s1091817@pu.edu.tw">s1091817@pu.edu.tw</a></h3>
+			</session>
 
-		<article id = "fav group">
-			<header>最愛組合</header>
-			<h3>NCT DREAM</h3>
-			<h3>TREASURE</h3>
-			<h3>TOMORROW X TOGETHER</h3>
-			<h3>SEVENTEEN</h3>
-		</article>
+			<article id = "fav group" class="col-lg-4">
+				<header>最愛組合</header>
+				<h3>NCT DREAM</h3>
+				<h3>TREASURE</h3>
+				<h3>TOMORROW X TOGETHER</h3>
+				<h3>SEVENTEEN</h3>
+			</article>
 
-		<aside id = "youtube">
-			<header>推薦影片</header>
-			<iframe src="https://www.youtube.com/embed/QPUjV7epJqE" allowfullscreen></iframe>
-		</aside>
-
+			<aside id = "youtube" class="col-lg-4">
+				<header>推薦影片</header>
+				<iframe src="https://www.youtube.com/embed/QPUjV7epJqE" allowfullscreen></iframe>
+			</aside>
+		</div><br><br>
+		
 		<footer>
 			Copyright ©  葉思妤. All Rights Reserved.
 		</footer>
